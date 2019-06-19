@@ -6,25 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/cristian/Desktop/practica-3-ccaballerof00/PC3/Deque.h
-iostream
--
-deque
--
-
-/home/cristian/Desktop/practica-3-ccaballerof00/PC3/Generica.h
+/home/cristian/Desktop/PC4-POO/PC3/Generica.h
 vector
 -
 iostream
 -
 
-/home/cristian/Desktop/practica-3-ccaballerof00/PC3/main.cpp
+/home/cristian/Desktop/PC4-POO/PC3/main.cpp
 iostream
 -
 vector
 -
 Generica.h
-/home/cristian/Desktop/practica-3-ccaballerof00/PC3/Generica.h
-Deque.h
-/home/cristian/Desktop/practica-3-ccaballerof00/PC3/Deque.h
+/home/cristian/Desktop/PC4-POO/PC3/Generica.h
+ctime
+-
 

@@ -27,7 +27,7 @@ public:
     }
     void AnadirElemento(T1 a);
     void imprimirMatriz();
-    Matriz<T1> operator + (Matriz<T1> m);
+    Matriz<T1> operator * (Matriz<T1> m);
 
 };
 
@@ -60,17 +60,29 @@ void Matriz<T1>::imprimirMatriz()
 
 
 template<typename T1>
-Matriz<T1> Matriz<T1>::operator+(Matriz<T1> m)
+Matriz<T1> Matriz<T1>::operator * (Matriz<T1> m)
         {
-            Matriz<T1> resultado = Matriz<T1>(filas,columnas);
-            for(int i=0;i<filas;++i)
+            if(columnas == m.filas )
             {
-                for(int j=0;j<columnas;++j)
-                {
-                    resultado.AnadirElemento(m.matriz.at(i).at(j) + matriz.at(i).at(j));
+                int sum=0;
+                Matriz<T1> resultado = Matriz<T1>(filas,m.columnas);
+                for(int i=0; i<filas; ++i) {
+                    for (int j = 0; j < m.columnas; ++j) {
+
+
+                        for (int z = 0 ; z < columnas; ++z) {
+                            sum += matriz[i][z] * m.matriz[z][j];
+                        }
+
+                        resultado.AnadirElemento(sum);
+                        sum=0;
+                    }
                 }
+                return resultado;
             }
-            return resultado;
+            else
+                throw runtime_error("No se puede hacer la multiplicación");
+
         }
 
 

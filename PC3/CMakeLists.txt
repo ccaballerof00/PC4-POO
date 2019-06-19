@@ -3,4 +3,4 @@ project(PC3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(PC3 main.cpp Generica.h Deque.h)
+add_executable(PC3 main.cpp Generica.h )
