@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/cristian/Desktop/untitled/main.cpp
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+assert.h
+-
+time.h
+-
+sys/time.h
+-
+iostream
+-
+vector
+-
+
